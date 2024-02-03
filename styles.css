@@ -1,0 +1,26 @@
+body {
+    background-color: #111; /* Dark background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.moon {
+    width: 200px;
+    height: 200px;
+    background-color: #ffeb3b; /* Yellow color */
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 235, 59, 0.8); /* Yellow glow effect */
+    animation: moonFloat 5s infinite alternate; /* Moon floating animation */
+}
+
+@keyframes moonFloat {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
